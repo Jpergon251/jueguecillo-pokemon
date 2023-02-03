@@ -19,7 +19,7 @@
   export default {
     props: {
         score: {
-            type: number,
+            type: Number,
             required: true,
         }
     }
@@ -28,7 +28,7 @@
   
   <style>
   table {
-    margin: 20px;
+    margin: auto;
     width: 60%;
     border-collapse: collapse;
   }
