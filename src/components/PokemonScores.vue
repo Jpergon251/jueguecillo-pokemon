@@ -7,9 +7,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(player, index) in players" :key="index">
-          <td>{{ player.name }}</td>
-          <td>{{ player.score }}</td>
+        <tr>
+          <td>{{name}}</td>
+          <td>{{score}}</td>
         </tr>
       </tbody>
     </table>
@@ -19,8 +19,12 @@
   export default {
     props: {
         score: {
-            type: Number,
-            required: true,
+          type: Number,
+          required: true
+        },
+        name: {
+          type: String,
+          required: true
         }
     }
   };
